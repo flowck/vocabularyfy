@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100vh;
+}
+
+#app,
+.app-view {
+  height: inherit;
+}
+
+body {
+  font-family: "arial";
+  background-color: #333;
+}
+
+.app-space {
+  margin: 20px 0;
+}
