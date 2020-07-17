@@ -1,34 +1,16 @@
-# vocabularyfy
+# Vocabularyfy
 
-## Project setup
-```
-npm install
-```
+A Chrome / Brave extension with the intent to enable users to extend their English vocabulary.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## How to run
 
-### Compiles and minifies for production
-```
-npm run build
-```
+After cloned to your machine, navigate to the project folder and install the dependencies:
 
-### Run your unit tests
-```
-npm run test:unit
-```
+    cd vocabularyfy
+    npm install
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+Run to generate the development build:
 
-### Lints and fixes files
-```
-npm run lint
-```
+    npm start
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Open Chrome / Brave, go to the extension manager, enable the `Developer mode`, and press and then select `Load unpacked` to and then browse through your files to select the folder: `path/to/vocabularyfy/dist`, after that, you just need to open a new tab to see the extension working.
