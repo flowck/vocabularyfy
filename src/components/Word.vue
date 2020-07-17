@@ -41,7 +41,15 @@ import { Vue, Component, Prop } from "vue-property-decorator";
   }
 })
 export default class AppWord extends Vue {
-  @Prop({ required: true }) word!: Word;
+  @Prop({
+    required: true,
+    validator: (word: Word) => {
+      return Object.keys(word).every(prop => {
+        return ["word", "example", "description"].find(item => item === prop);
+      });
+    }
+  })
+  word!: Word;
 }
 </script>
 
